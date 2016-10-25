@@ -1,10 +1,9 @@
-# dockerfile for image aview:latest
+# dockerfile for image rawevan/ubuntu:shutter
+# docker run -it --rm -v $(PWD):/home/developer/workspace rawevan/ubuntu:shutter
 FROM rawevan/ubuntu:basetools
 MAINTAINER Evan <liaiwen_mail@163.com>
-RUN apt-get install -y aview --no-install-recommends && \
-    apt-get install -y imagemagick --no-install-recommends && \
-    rm -rf /var/lib/apt/lists/*
+RUN apt-get install -y shutter --no-install-recommends && \
 ENV GOPATH /home/developer/workspace
 ENV HOME /home/developer/workspace
-CMD ["asciiview"]
+CMD ["shutter"]
 

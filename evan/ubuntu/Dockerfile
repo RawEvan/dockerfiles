@@ -12,7 +12,7 @@ RUN apt-get update && \
     apt-get update && \
     apt-get upgrade -y && \
     # install curl
-    apt-get install -y curl && \
+    apt-get install -y curl
 
 ENV HOME /root
 WORKDIR $HOME
