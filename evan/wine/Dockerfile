@@ -1,5 +1,5 @@
 # Wine docker image base
-FROM ubuntu:apt-get
+FROM rawevan/ubuntu:basetools
 MAINTAINER Evan <liaiwen_mail@163.com>
 
 # install wine
