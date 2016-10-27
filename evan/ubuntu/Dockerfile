@@ -7,7 +7,7 @@ RUN apt-get update && \
     apt-get install -y wget && \
     # change sources.list
     wget -O sources.list https://raw.githubusercontent.com/RawEvan/dockerfiles/ubuntu/evan/ubuntu/sources.list && \
-    mv sources.list /etc/apt/sources.list && \
+    #mv sources.list /etc/apt/sources.list && \
     # update apt-get
     apt-get update && \
     apt-get upgrade -y && \
