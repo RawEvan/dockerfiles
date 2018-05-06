@@ -1,4 +1,5 @@
 FROM elicocorp/odoo-china:10.0
+# reference: https://hub.docker.com/r/kongkoro/pycharm/~/dockerfile
 User 0
 RUN apt-get update &&\
     apt-get install -y \ 
