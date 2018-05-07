@@ -7,10 +7,10 @@ RUN apt-get update &&\
         libxtst6 \ 
         libxi6 \
         --no-install-recommends
-RUN sudo apt-get install -f && \
-        sudo add-apt-repository ppa:openjdk-r/ppa  && \
-        sudo apt-get update && \
-        sudo apt-get install openjdk-7-jre
+RUN apt-get install -f && \
+        add-apt-repository ppa:openjdk-r/ppa  && \
+        apt-get update && \
+        apt-get install openjdk-7-jre
 RUN wget https://download.jetbrains.8686c.com/python/pycharm-community-2018.1.2.exe -O /tmp/pycharm.tar.gz
 RUN rm -rf /var/lib/apt-lists; rm -rf /tmp/*; apt-get purge wget -y; apt-get autoremove -y
 ENV PYCHARM_HOME=/etc/pycharm
